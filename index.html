@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sigma layout</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root{
+      --primary-color: #0583F2;
+      --secondary-color: #0597F2;
+      --tertiary-color: #F2BC57;
+      --text-color: black;
+      --background-color: #F2D8EB;
+    }
+    body{
+      font-family: "Poppins", arial, sans-serif;
+      background-color: var(--secondary-color);
+    }
+    header{
+      width: 100vw;
+      position: sticky;
+      top: 0;
+      background-color: var(--primary-color);
+      z-index: 10;
+    }
+    nav ul{
+      list-style: none;
+    }
+    nav ul li{
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: var(--tertiary-color);
+      border-radius: 7px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    main{
+      margin: 20px 10px;
+    }
+    section{
+      background-color: var(--background-color);
+      overflow-x: auto;
+      padding: 20px;
+    }
+    section > img{
+      width: 40%;
+      max-width: 100%;
+      mix-blend-mode: darken;
+    }
+    .img1{
+      float: left;
+    }
+    .img2{
+      float: right;
+    }
+    article{
+      margin-top: 30px;
+      text-align: center;
+      background-color: #F2BC57;
+      border-radius: 10px;
+      padding: 50px;
+    }
+    article p{
+      clear: both;
+    }
+    #greeks{
+      position: absolute;
+      bottom: 0; right: 0;
+      margin-right:  5px;
+      margin-bottom: 5px;
+      border-radius: 50%;
+      width:  10vw;
+      height: 10vw;
+      object-fit: cover;
+    }
+    footer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <img src="Sigma.png" alt="Sigma" class="img1">
+      
+      <img src="InvertedSigma.png" alt="Inverted Sigma" class="img2">
+    </section>
+    
+    <article>
+      <p>
+        Welcome to this Sigma Development express!
+      </p>
+    </article>
+  </main>
+  
+  <img src="GreekSigmas.jpg" alt="Greek Sigmas" id="greeks">
+  
+  <footer>
+    <p>
+      &copy; 2024 Copyrights reserved
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.logodiv {
+  float: left;
+  width: 100vw;
+}
+
+.Foton {
+  width: 25%;
+}
+
+.logo a {
+  display: block;
+  padding: 10px;
+}
+
+.nav-links {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Style for sign up and sign in buttons */
+li:nth-last-child(-n+2) a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li:nth-last-child(-n+2) a:hover {
+  background-color: #45a049;
+}

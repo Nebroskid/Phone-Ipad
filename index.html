@@ -24,9 +24,14 @@
     body{
       font-family: "Poppins", arial, sans-serif;
       background-color: var(--secondary-color);
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 150px;
     }
     header{
       width: 100vw;
+      display: flex;
+      justify-content: center;
       position: sticky;
       top: 0;
       background-color: var(--primary-color);
@@ -41,13 +46,23 @@
       margin: 10px;
       background-color: var(--tertiary-color);
       border-radius: 7px;
+      /* transition: background-color 1s, box-shadow 1s, transform 1s; */
+    }
+    nav ul li:hover{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      transform: translate(-5%, -5%);
+      transition-duration: .5s;
+      background-color: #CA9C47;
+    }
+    nav ul li:not(:hover) {
+      transition-duration: .5s;
     }
     nav ul li a{
       text-decoration: none;
       color: var(--text-color);
     }
     main{
-      margin: 20px 10px;
+      margin: 20px;
     }
     section{
       background-color: var(--background-color);
@@ -72,18 +87,14 @@
       border-radius: 10px;
       padding: 50px;
     }
-    article p{
-      clear: both;
-    }
-    #greeks{
+    #logo{
       position: absolute;
-      bottom: 0; right: 0;
-      margin-right:  5px;
-      margin-bottom: 5px;
+      bottom: 10px; right: 10px;
       border-radius: 50%;
       width:  10vw;
       height: 10vw;
       object-fit: cover;
+      z-index: 10;
     }
     footer{
       position: absolute;
@@ -91,6 +102,8 @@
       width: 100%;
       text-align: center;
       padding: 10px;
+      background-color: var(--primary-color);
+      color: var(--text-color);
     }
   </style>
 </head>
@@ -118,9 +131,21 @@
         Welcome to this Sigma Development express!
       </p>
     </article>
+    
+    <article>
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat sem ipsum, sit amet feugiat quam varius sed. Curabitur sem sem, vehicula ac magna ac, vehicula bibendum tellus. Quisque convallis tellus metus, a varius dolor condimentum vitae. Pellentesque mollis est tellus, nec tincidunt orci commodo rutrum. Mauris blandit elit metus, et gravida nisl volutpat et. Praesent ut nisl dapibus, dapibus massa sed, pulvinar augue. Nunc faucibus faucibus metus et tempus. Praesent ultricies purus nibh, nec rutrum dolor interdum at. Nullam porttitor ipsum ac rhoncus accumsan. Praesent ut posuere enim, in aliquam nibh. In porttitor sollicitudin pretium.
+
+  Nunc sed mi in nunc convallis aliquam non vel ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sodales erat a ipsum molestie, quis blandit metus porta. Quisque ex justo, ultrices non arcu vel, porttitor aliquam dui. Sed porta, augue et euismod pharetra, orci magna pulvinar risus, a posuere quam augue facilisis magna. Mauris sed lectus in libero pretium iaculis. Phasellus vitae libero a quam interdum porta. Maecenas risus felis, congue maximus porta nec, bibendum eu odio. Sed lobortis urna eu leo pulvinar, interdum placerat lectus faucibus.
+
+  Aenean volutpat quam non ex laoreet, ut pretium neque tincidunt. Nam at odio metus. Sed malesuada ultricies molestie. Nulla arcu nisi, molestie vel tempor eu, interdum a mi. Donec sollicitudin turpis consequat feugiat imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ultrices.
+
+
+</p>
+    </article>
   </main>
   
-  <img src="GreekSigmas.jpg" alt="Greek Sigmas" id="greeks">
+  <img src="GreekSigmas.jpg" alt="Greek Sigmas" id="logo">
   
   <footer>
     <p>
